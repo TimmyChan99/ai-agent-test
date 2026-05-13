@@ -20,6 +20,7 @@ def main():
     messages = [
         types.Content(role="user", parts=[types.Part(text=prompt)])
     ]
+    
     response = client.models.generate_content(
         model="gemini-2.5-flash-lite",
         contents=messages
